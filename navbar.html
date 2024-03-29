@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-area {
+            background-color: #333;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+		.mobile-icon {display:none;}
+		
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 20px;
+                display: none; /* Hide the navigation links by default */
+            }
+
+            .nav-links.active {
+                display: flex; /* Show the navigation links when the menu is active */
+            }
+
+            .nav-links li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .menu-icon {
+                cursor: pointer;
+                display: block;
+                font-size: 24px;
+            }
+	.logo {width: 100%;}
+	.logo-img{width: 90%;}
+	.mobile-icon {display:block;float: left;width: 10%;}
+	.logo-img, .mobile-icon {float: left;}
+
+        }
+    </style>
+</head>
+<body>
+
+<section class="navbar-area">
+    <div class="container">
+        <div class="row">
+            <div class="navbar">
+                <div class="logo">
+			<div class="logo-img">
+				<img src="./images/up-logo.webp" alt="Logo">
+			</div>
+			<div class="mobile-icon">
+			<div class="menu-icon">&#9776;</div>
+                	</div>
+		</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Parts</a></li>
+                    <li><a href="#">Equipment</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Need Estimate?</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
+    });
+</script>
+
+<!-- Other content goes here -->
+
+</body>
+</html>

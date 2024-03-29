@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Md Jahid Shah</title>
+		<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/all.min.css">
+		<!--link rel="stylesheet" href="css/fontawesome.min.css"-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		
+	</head>
+	<body>
+		<!--button-->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<!--button-->
+		    <!-- Content container -->
+		<section class="container cont-bg">
+			<div class="biolink">
+				<div class="col-x model-img  common-millde">
+					<img src="./images/smartphone-mockups.png" alt="Logo">
+				</div>
+
+				<div class="biolink-info">
+					<div class="biolink-width">
+						<!-- Image and name container. Change to your picture here. -->
+						<div class="bio-image" style="text-align: center">
+							<img src="./Images/Md_Jahid_Shah.png" class="w3-round" alt="person image">
+						</div>
+						<div class="bio-headinfo" style="text-align: center">
+							<h2 class="name"><span class="w3-padding w3-theme-l1 w3-margin w3-round" style="font-weight: bolder;">Md.Jahid Shah</span></h2>
+							<h3><span class="profession w3-padding w3-theme-d5 w3-round" style="font-weight: bolder;">WordPress Developer</span></h3>
+						</div>
+						<div class="social-icon">
+							<span><a href="https://www.linkedin.com/in/md-jahid-shah-js/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
+							<span><a href="https://twitter.com/MdJahidShah0" target="_blank"><i class="fab fa-twitter-square"></i></a></span>
+							<span><a href="https://www.youtube.com/@JahidShah0" target="_blank"><i class="fab fa-youtube"></i></a></span>
+							<span><a href="https://www.facebook.com/JahidShah0/" target="_blank"><i class="fab fa-facebook-square"></i></a></span>
+							<span><a href="https://jahidshah.sscholarscenter.com/" target="_blank"><i class="fas fa-globe"></i></a></span>
+						</div>
+
+						<div class="contact-me">
+							<span><a href="https://calendly.com/mdjahidshah/30min" target="_blank" class="contact-txt">Book a Free Consultation <i class="fas fa-play-circle"></i></a></span>
+							<span><a href="https://jahidshah.sscholarscenter.com/category/blog/" target="_blank" class="contact-txtr">Reed My Blog</a></span>
+						</div>
+						<!-- Links section 1. Replace the # inside of the "" with your links. -->
+						<div class="links-container">
+							<div class="contact-info">
+								<span class="w3-button link">+880 1684-618950</span>
+								<span><a href="#" class="w3-button link" target="_blank">mdjahidshah65@gmail.com</a></span>
+								<span><a href="https://jahidshah.sscholarscenter.com/" class="w3-button link" target="_blank">https://jahidshah.sscholarscenter.com/</a></span>
+							</div>
+							<div class="products">
+								<h2>Services</h2>
+								<div class="product-list serv-content">
+									<span class="widgets productss"><p>Web Development</p></span>
+									<span class="widgets productss"><p>Web Security Fixing</p></span>
+									<span class="widgets productss"><p>Migrate into WordPress</p></span>
+									<span class="widgets productss"><p>Website Speed Optimization</p></span>
+									<span class="widgets productss"><p>Website Maintenance</p></span>
+									<span class="widgets productss"><p>Facebook Pixel Setup</p></span>
+								</div>
+							</div>
+							
+							<div class="upworkcss">
+								<a href="https://www.upwork.com/freelancers/~017d4f7b9e14c3a1e0" target="_blank">
+									@Upwork
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="copyright-footer-area" id="copywrite-footer">
+			<div class="container copyright-footer-bg">
+				<div class="row">
+					<div id="copywrite-area">
+						<div class="copywrite-area">
+							<p>Copyright &copy;Jahid Shah 2024</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+			<script>
+				window.onscroll = function () {
+					scrollFunction();
+				};
+
+				function scrollFunction() {
+					var myBtn = document.getElementById("myBtn");
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						myBtn.style.display = "block";
+					} else {
+						myBtn.style.display = "none";
+					}
+				}
+
+				function topFunction() {
+					// Use scrollIntoView with smooth behavior
+					document.body.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+
+					// For older browsers that do not support smooth scrolling
+					document.documentElement.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+							
+				document.addEventListener('DOMContentLoaded', function () {
+					const menuIcon = document.querySelector('.menu-icon');
+					const navLinks = document.querySelector('.nav-links');
+
+					menuIcon.addEventListener('click', function () {
+						navLinks.classList.toggle('active');
+					});
+
+					// Smooth scrolling for navigation links
+					document.querySelectorAll('.nav-links a').forEach(anchor => {
+						anchor.addEventListener('click', function (e) {
+							e.preventDefault();
+
+							const targetId = this.getAttribute('href').substring(1);
+							const targetElement = document.getElementById(targetId);
+
+							if (targetElement) {
+								targetElement.scrollIntoView({
+									behavior: 'smooth',
+									block: 'start'
+								});
+							}
+						});
+					});
+				});
+			</script>
+
+	</body>
+</html>
