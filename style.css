@@ -319,6 +319,15 @@ a.contact-txtr {
   text-align: center;
   margin: 5% 0 1% 0;
 }
+.webresu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  column-gap: 10px;
+  width: 100%;
+}
 .link {
   color: #acadaf;
   font-size: 20px;
