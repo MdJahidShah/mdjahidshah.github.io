@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Md Jahid Shah</title>
+		<link rel="icon" type="image/x-icon" href="https://mdjahidshah.github.io/Images/Md_Jahid_Shah.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/all.min.css">
+		<!--link rel="stylesheet" href="css/fontawesome.min.css"-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		
+	</head>
+	<body>
+		<!--button-->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<!--button-->
+		    <!-- Content container -->
+		<section class="full-wrap">
+			<div class="wrap">
+                
+            </div>
+		</section>
+		
+		<section class="copyright-footer-area" id="copywrite-footer">
+			<div class="container copyright-footer-bg">
+				<div class="row">
+					<div id="copywrite-area">
+						<div class="copywrite-area">
+							<p>Copyright &copy;Jahid Shah 2024</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+			<script>
+				window.onscroll = function () {
+					scrollFunction();
+				};
+
+				function scrollFunction() {
+					var myBtn = document.getElementById("myBtn");
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						myBtn.style.display = "block";
+					} else {
+						myBtn.style.display = "none";
+					}
+				}
+
+				function topFunction() {
+					// Use scrollIntoView with smooth behavior
+					document.body.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+
+					// For older browsers that do not support smooth scrolling
+					document.documentElement.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+							
+				document.addEventListener('DOMContentLoaded', function () {
+					const menuIcon = document.querySelector('.menu-icon');
+					const navLinks = document.querySelector('.nav-links');
+
+					menuIcon.addEventListener('click', function () {
+						navLinks.classList.toggle('active');
+					});
+
+					// Smooth scrolling for navigation links
+					document.querySelectorAll('.nav-links a').forEach(anchor => {
+						anchor.addEventListener('click', function (e) {
+							e.preventDefault();
+
+							const targetId = this.getAttribute('href').substring(1);
+							const targetElement = document.getElementById(targetId);
+
+							if (targetElement) {
+								targetElement.scrollIntoView({
+									behavior: 'smooth',
+									block: 'start'
+								});
+							}
+						});
+					});
+				});
+			</script>
+
+	</body>
+</html>
