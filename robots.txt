@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /?s=*
+Disallow: */feed/
+Disallow: */feed/$
+Disallow: /comments/feed
+Disallow: /porpoiseant
+Disallow: /*.webp$
+Disallow: /wp-content/uploads/
+Disallow: /users/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://mdjahidshah.github.io/sitemap.xml
