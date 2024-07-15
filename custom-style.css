@@ -70,3 +70,15 @@ padding: 0px;
 li.nav-item.dropdown ul li a {
 padding: 15px 10px;
 }
+footer p {
+    text-align: center;
+    padding: 20px 0;
+    background: #404040;
+    color: #fff;
+	}
+	footer p a {
+    color: #0ed9d9;
+	}
+	footer p a:hover {
+    color: #c7c7c7;
+	}
