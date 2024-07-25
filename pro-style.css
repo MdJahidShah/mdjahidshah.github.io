@@ -135,6 +135,12 @@ img.model-logo {
 .showcase p {
     font-size: 20px;
 }
+.post-body p {
+    text-align: justify;
+}
+.post-body img {
+    width: 100%;
+}
 .content {
     padding: 20px;
     background: #fff;
