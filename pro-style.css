@@ -412,6 +412,10 @@ figure.Portfolioimg {
 .portfolio-body:hover .view-more {
     color: #020202;
 }
+.post-body img {
+    overflow: hidden;
+    width: 100%;
+}
 /*blog html css End*/
 
 @media (max-width: 768px) {

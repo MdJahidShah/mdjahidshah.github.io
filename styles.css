@@ -16,6 +16,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.post-body img {
+    overflow: hidden;
+    width: 100%;
+}
 .singlepost img {
     width: 100%;
 }
