@@ -168,6 +168,9 @@ img.model-logo {
     align-items: center;
     align-content: center;
 }
+.post-body img {
+    width: 100%;
+}
 .article-body h2,.skillsnothers h2,.stats-Streak h2 {
     font-size: 25px;
 }
