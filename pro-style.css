@@ -171,6 +171,9 @@ img.model-logo {
 .post-body img {
     width: 100%;
 }
+.singlepost img {
+    width: 100%;
+}
 .article-body h2,.skillsnothers h2,.stats-Streak h2 {
     font-size: 25px;
 }
