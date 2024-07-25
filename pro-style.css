@@ -355,6 +355,59 @@ img.model-logo {
 #chatbotInput button:hover {
     background-color: #555;
 }
+/*blog html css Start*/
+.bloghtml h2 {
+    text-align: center;
+    color: #e40d0d;
+    font-weight: bold;
+}
+.article-list {
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 1px 0px #ccc;
+}
+.article-list img {
+    width: 100%;
+}
+h2.blog-head span {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #292727;
+}
+.learn-more {
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: center;
+}
+.learn-more a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #5b85fd;
+    border-radius: 5px;
+}
+.learn-more a:hover {
+    color: #f4f4f4;
+    background: #292727;
+    border: 1px solid #292727;
+}
+figure.Portfolioimg {
+    height: 230px;
+    overflow: hidden;
+}
+.port-link a {
+    text-decoration: none;
+    color: #020202;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.portfolio-body:hover .view-more {
+    color: #020202;
+}
+/*blog html css End*/
+
 @media (max-width: 768px) {
     header nav {
         float: none;
