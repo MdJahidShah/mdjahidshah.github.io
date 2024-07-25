@@ -16,6 +16,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.single-post {
+    width: 66.66666667%;
+    overflow: hidden;
+}
+aside.bd-sidebar {
+    width: 33.33333333%;
+    overflow: hidden;
+}
 .post-body img {
     overflow: hidden;
     width: 100%;
