@@ -24,10 +24,7 @@ aside.bd-sidebar {
     width: 33.33333333%;
     overflow: hidden;
 }
-.post-body img {
-    overflow: hidden;
-    width: 100%;
-}
+
 .singlepost img {
     width: 100%;
 }

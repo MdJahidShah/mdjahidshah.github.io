@@ -168,12 +168,6 @@ img.model-logo {
     align-items: center;
     align-content: center;
 }
-.post-body img {
-    width: 100%;
-}
-.singlepost img {
-    width: 100%;
-}
 .article-body h2,.skillsnothers h2,.stats-Streak h2 {
     font-size: 25px;
 }
@@ -411,10 +405,6 @@ figure.Portfolioimg {
 }
 .portfolio-body:hover .view-more {
     color: #020202;
-}
-.post-body img {
-    overflow: hidden;
-    width: 100%;
 }
 /*blog html css End*/
 
