@@ -132,6 +132,7 @@ h1.bd-title.website-subhead, section.showcase h2, section.showcase p {
     color: #2c2b2b;
 }
 img.model-logo {
+    display: flex;
     border-radius: 50%;
     height: 175px;
     width: 175px;
