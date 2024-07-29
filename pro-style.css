@@ -110,13 +110,20 @@ padding: 15px 10px;
     justify-content: space-between;
     align-items: center;
 }
-.showcase {
-    padding: 2% 0 0 0;
-    background: #242424;
-    text-align: center;
-    color: #242424;
-    background-size: cover;
-    background-position: center;
+.card-img {
+    padding: 10% 0;
+}
+.card-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+p.card-text-welcome {
+    font-size: 20px;
+}
+div#customNavbar {
+    /*display: flex;*/
+    justify-content: space-between;
 }
 h1.bd-title.website-subhead, section.showcase h2, section.showcase p {
     color: #fff;
@@ -127,20 +134,38 @@ img.model-logo {
     width: 175px;
     margin: 1% auto;
 }
-.showcase h1 {
-    margin-top: 10px;
-    font-size: 45px;
-    margin-bottom: 10px;
-}
-.showcase p {
-    font-size: 20px;
-}
 .post-body p {
+    font-size: 20px;
     text-align: justify;
 }
 .post-body img {
     width: 100%;
+    overflow: hidden;
 }
+a.btn.btn-class {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    font-weight: bold;
+}
+a.btn.btn-class:hover {
+    background: #ccc;
+    color: #191e1c;
+}
+.post-body h1 {
+    font-weight: bold;
+    text-align: justify;
+    line-height: 55px;
+    padding: 0 0 15px 0;
+}
+.post-body h2 {
+    font-weight: bold;
+    padding: 15px 0 5px 0;
+}
+.post-body h3 {
+    font-weight: bold;
+    padding: 20px 0 10px 0;
+}
+
 .content {
     padding: 20px;
     background: #fff;
@@ -409,6 +434,9 @@ figure.Portfolioimg {
     display: flex;
     justify-content: center;
 }
+.view-more {
+    
+}
 .portfolio-body:hover .view-more {
     color: #020202;
 }
@@ -451,4 +479,5 @@ figure.Portfolioimg {
         margin: 10px 0;
         min-width: auto;
     }
+  
 }
