@@ -125,6 +125,9 @@ div#customNavbar {
     /*display: flex;*/
     justify-content: space-between;
 }
+.heading-text {
+    text-align: center;
+}
 h1.bd-title.website-subhead, section.showcase h2, section.showcase p {
     color: #2c2b2b;
 }
