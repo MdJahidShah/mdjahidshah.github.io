@@ -118,6 +118,10 @@ padding: 15px 10px;
     height: 200px;
     border-radius: 50%;
 }
+figcaption.text-center {
+    padding: 0 0 3% 0;
+    font-weight: bold;
+}
 p.card-text-welcome {
     font-size: 20px;
 }
