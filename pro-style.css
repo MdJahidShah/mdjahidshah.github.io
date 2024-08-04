@@ -231,6 +231,14 @@ a.btn.btn-class:hover {
     font-family: math;
     padding: 0 0 5px 0;
 }
+.article-list h3 {
+    font-size: 23px;
+    text-align: justify;
+    padding: 0 0 5px 0;
+}
+.article-list p {
+    text-align: justify;
+}
 .skillsnothers h2 {
     border-bottom: 1px solid #ccc;
 }
