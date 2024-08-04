@@ -121,7 +121,8 @@ padding: 15px 10px;
 a.btn.bg-primary {
     color: #fff;
     font-weight: bold;
-}
+    margin: 10px 0 0 0;
+    }
 a.btn.bg-primary:hover {
     background-color: #3735a8;
 }
