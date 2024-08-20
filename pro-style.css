@@ -243,7 +243,11 @@ a.btn.btn-class:hover {
     font-size: 20px;
     margin: 5px 0;
 }
-li {
+ul li {
+    font-size: 20px;
+    margin: 5px 0;
+}
+ol li {
     font-size: 20px;
     margin: 5px 0;
 }
