@@ -243,6 +243,10 @@ a.btn.btn-class:hover {
     font-size: 20px;
     margin: 5px 0;
 }
+li {
+    font-size: 20px;
+    margin: 5px 0;
+}
 .post-body pre {
     background: #ccc;
     color: #000;
