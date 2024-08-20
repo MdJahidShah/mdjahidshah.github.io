@@ -239,6 +239,14 @@ a.btn.btn-class:hover {
 .article-list p {
     text-align: justify;
 }
+.post-body ul li, .post-body ol li {
+    font-size: 20px;
+    margin: 5px 0;
+}
+.post-body pre {
+    background: #ccc;
+    color: #000;
+}
 .skillsnothers h2 {
     border-bottom: 1px solid #ccc;
 }
