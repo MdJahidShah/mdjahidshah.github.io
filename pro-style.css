@@ -255,6 +255,9 @@ pre {
     background: #ccc;
     color: #000;
 }
+.article-sd h3 {
+    padding: 0 5px;
+}
 .skillsnothers h2 {
     border-bottom: 1px solid #ccc;
 }
