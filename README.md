@@ -9,3 +9,7 @@ This is personal Portfilio Site.
 
 ## Contact Me
 [Linkedin](https://www.linkedin.com/in/md-jahid-shah-js/)
+[Facebook](https://www.facebook.com/JahidShah0/)
+[X](https://x.com/jahidshahwp)
+[Website](https://mdjahidshah.github.io/)
+
