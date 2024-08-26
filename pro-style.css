@@ -224,6 +224,7 @@ a.btn.btn-class:hover {
 }
 .article-body {
     border-bottom: 0.1px solid #ccc;
+    padding-bottom: 15px;
 }
 .article-body p {
     text-align: justify;
@@ -288,10 +289,37 @@ pre {
 .follow-me {
     background: #f4f4f4;
     padding: 15px 0;
+    text-align: center;
 }
 .common {
     margin: 5% 0;
 }
+.about-item {
+    margin: 0px;
+    padding: 10px;
+    box-shadow: 1px 2px 3px #ccc;
+    border-radius: 10px;
+}
+.about-item h3 {
+    border-bottom: 5px solid #fff;
+    text-align: center;
+}
+.aboutme {
+    border-radius: 10px;
+}
+.starss {
+    text-align: center;
+}
+.row {
+    margin-right: -1px; /* Adjust row margin to counteract the item margin */
+    margin-left: -1px;
+}
+
+.about-item > .col {
+    padding-right: 1px; /* Ensure consistent spacing between columns */
+    padding-left: 1px;
+}
+
 .footer {
     background-color: #333;
     color: #fff;
