@@ -206,10 +206,55 @@
                         }
                             </code></pre>
                         </div>
+                        <p><b>To run the use this:</b></p>
+                        <div class="example-code">
+                            <pre><code>
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang=&quot;en&quot;&gt;
+                                &lt;head&gt;
+                                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                                    &lt;title&gt;Guess the Number&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;h1&gt;Guess the Number Game&lt;/h1&gt;
+                                    &lt;p id=&quot;result&quot;&gt;&lt;/p&gt; &lt;!-- This is where the result will be displayed --&gt;
+                                
+                                    &lt;script&gt;
+                                        // Generate a random number between 1 and 10
+                                        let numberToGuess = Math.floor(Math.random() * 10) + 1;
+                                
+                                        // Prompt the user to guess a number
+                                        let userGuess = prompt(&quot;Guess a number between 1 and 10:&quot;);
+                                
+                                        // Get the element where we will display the result
+                                        const resultElement = document.getElementById('result');
+                                
+                                        // Check if the user has input a valid number
+                                        if (userGuess !== null &amp;&amp; !isNaN(userGuess)) {
+                                            if (parseInt(userGuess) === numberToGuess) {
+                                                resultElement.textContent = &quot;Wow! You guessed it right! The number was &quot; + numberToGuess;
+                                            } else {
+                                                resultElement.textContent = &quot;Oops! The correct number was &quot; + numberToGuess;
+                                            }
+                                        } else {
+                                            resultElement.textContent = &quot;Invalid input. Please enter a number.&quot;;
+                                        }
+                                    &lt;/script&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+                            </code></pre>
+                        </div>
 
                         <p>Copy and paste the code above into your Replit editor and run it. The computer will pick a random number between 1 and 10, and you’ll have to guess what it is. If you guess correctly, it will tell you that you’re right!</p>
-
-                        <img src="https://global.discourse-cdn.com/freecodecamp/original/3X/0/0/00dd4bc804540e07478b1dfcb5dc3b35b89978b1.jpeg" alt="Number Guessing Game">
+                        <figure>
+                            <img src="https://mdjahidshah.github.io/Images/guessNumber-input.jpg" alt="Number Guessing Game">
+                            <figcaption>Input Image</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://mdjahidshah.github.io/Images/guessNumber-output.jpg" alt="Number Guessing Game">
+                            <figcaption>Output Image</figcaption>
+                        </figure>
 
                         <h2>How Does It Work?</h2>
 
