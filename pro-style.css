@@ -319,7 +319,9 @@ pre {
     padding-right: 1px; /* Ensure consistent spacing between columns */
     padding-left: 1px;
 }
-
+p.text-justify {
+    text-align: justify;
+}
 .footer {
     background-color: #333;
     color: #fff;
