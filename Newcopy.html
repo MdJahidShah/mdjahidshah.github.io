@@ -63,48 +63,9 @@
 	
 	<body>
 		<!-- Navbar Section Start-->
-		<div class="bg-light nav-bg sticky-top">
-			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<div class="container-fluid">
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-						</button>
-						<a class="navbar-brand mobile-view" href="#"><span>Jahid Shah</span></a>
-						<div class="collapse navbar-collapse navbar-Toggler" id="navbarTogglerDemo03">
-							<div class="desktop-view">
-								<a class="navbar-brand" href="https://mdjahidshah.github.io/"><span>Jahid Shah</span></a>
-								<img src="https://komarev.com/ghpvc/?username=mdjahidshah" alt="Profile Views">
-							</div>
-							<div>
-								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-									<li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="https://mdjahidshah.github.io/">Home</a>
-									</li>
-									<li class="nav-item">
-									<a class="nav-link" href="blog.html">Blog</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="https://mdjahidshah.github.io/services.html">Services</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="https://mdjahidshah.github.io/portfolio.html">Portfolio</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="https://mdjahidshah.github.io/email-templates-free.html">Email Template</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="https://jahidshah.sscholarscenter.com/#sendmemsg">Contact</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</nav>
-			</div>
-        </div>
+		<div class="bg-light nav-bg sticky-top" id="navbar-container"></div>
 		<!-- Navbar Section End-->
-
+		
 		<div class="container wrap">
 			<div class="row">
 				<article class="col-sm-8 single-post">
@@ -112,38 +73,63 @@
 						<h1 class="bd-title" id="content">10 Best WordPress Blog Themes of 2024: Find Your Perfect Fit!</h1>
 						<div class="post-body">
 							<figure class="figure">
-								<img src="https://mdjahidshah.github.io/Images/11-Best-FREE-AI-TOOLS-For-WordPress-Website-Designers-&-Developers.jpg" class="figure-img img-fluid rounded" alt="11 Best FREE AI TOOLS For WordPress Website Designers & Developers">
+								<img src="https://emeraldgarden.github.io/Images/11-Best-FREE-AI-TOOLS-For-WordPress-Website-Designers-&-Developers.jpg" class="figure-img img-fluid rounded" alt="11 Best FREE AI TOOLS For WordPress Website Designers & Developers">
 								<figcaption class="figure-caption text-center">11 Best FREE AI TOOLS For WordPress Website Designers & Developers</figcaption>
 							</figure>
 							<div class="text-justify postimg">
-							
+								
+								<span id="relatedpost-container-page" class="my-3 pt-3" width="100%" height="100%"></span>
 							</div>
 						</div>
 					</div>
 				</article>
-				
-				<aside class="bd-sidebar col-sm-4 text-center">
-            <div class="col-sm">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="card-img-top" src="https://mdjahidshah.github.io/Images/Md_Jahid_Shah.png" alt="Jahid Shah">
-                    </div>
-                  <div class="card-body">
-                    <h2 class="card-title text-center">Jahid Shah</h2>
-                    <p class="card-text-welcome">Hi there! I'm Jahid Shah, a dedicated Penetration Tester, Passionate WordPress Developer, and Cybersecurity Enthusiast. With a solid background in Information Technology and a keen interest in cybersecurity, I strive to enhance digital security and build robust web solutions.</p>
-                    <a href="https://mdjahidshah.github.io/services.html" class="btn btn-primary">See More</a>
-                  </div>
-                </div>
-            </div>       
-				</aside>
+				<aside id="sidebar-container-page" class="bd-sidebar col-sm-4 text-center"></aside>
 			</div>
-		</div>
-        
-    <footer class="footer">
-			<div class="footer-credit">
-				<p>© Jahid Shah. All rights reserved. Developed by <a href="https://jahidshah.sscholarscenter.com/" target="_blank" style="color: #fff;">Md Jahid Shah</a>.</p>
-			</div>
+		</div>		
+		<!-- Footer Section -->
+		<footer class="footer" id="footer-container">
 		</footer>
+		<!-- End of Footer Section -->
+		<script>
+			// Function to load navbar and footer
+			document.addEventListener("DOMContentLoaded", function () {
+				fetch("navbar.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("navbar-container").innerHTML = data;
+					})
+					.catch(error => console.error("Error loading the navbar:", error));
+				
+				fetch("page-navbar.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("navbar-container-page").innerHTML = data;
+					})
+					.catch(error => console.error("Error loading the navbar:", error));
+				
+				fetch("related-post.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("relatedpost-container-page").innerHTML = data;
+					})
+					.catch(error => console.error("Error loading the navbar:", error));
+
+				
+				fetch("sidebar.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("sidebar-container-page").innerHTML = data;
+					})
+					.catch(error => console.error("Error loading the navbar:", error));
+
+				fetch("footer.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("footer-container").innerHTML = data;
+					})
+					.catch(error => console.error("Error loading the footer:", error));
+			});
+		</script>
         <!-- Scroll to Top Button -->
         <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
 
