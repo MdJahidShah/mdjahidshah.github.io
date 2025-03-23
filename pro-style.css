@@ -472,6 +472,7 @@ p.text-justify {
 }
 .article-list img {
     width: 100%;
+    height: 165px;
 }
 h2.blog-head span {
     text-decoration: underline;
