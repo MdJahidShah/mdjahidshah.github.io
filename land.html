@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure & Speed Up Your Website – Get Expert Help Now!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style type="text/css">
+        body { font-family: Arial, sans-serif; }
+        .hero { background: #007bff; color: white; padding: 80px 20px; text-align: center; }
+        .cta-btn { background: #6edf05; border: none; padding: 12px 30px; font-size: 20px; }
+        .features, .about, .services, .reviews { padding: 50px 20px; }
+        .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25D366; padding: 10px 20px; color: white; border-radius: 50px; }
+        .service-img { width: 100%; height: auto; border-radius: 10px; }
+        .cta-btn {
+                display: inline-block;
+                visibility: visible;
+            }
+    </style>
+</head>
+<body>
+    
+    <!-- Hero Section (Top Button) -->
+    <div class="hero">
+        <h1>Secure & Speed Up Your Website</h1>
+        <p>Protect your site from hackers, remove malware, and boost performance!</p>
+        <button class="btn cta-btn border" id="topContactBtn">Get a Free Consultation</button>
+    </div>
+    
+    <!-- About Us Section -->
+    <div class="container about">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="about-us.jpg" alt="About Us" class="service-img">
+            </div>
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>We are cybersecurity and web development experts with years of experience in securing and optimizing websites.</p>
+                <button class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Features Section -->
+    <div class="container features text-center">
+        <h2>Why Choose Our Services?</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h4>✅ Website Security</h4>
+                <p>We secure your site against malware, hacking, and vulnerabilities.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>⚡ Speed Optimization</h4>
+                <p>We optimize loading times and boost your site's performance.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>📞 24/7 Support</h4>
+                <p>Get expert help anytime for security or performance issues.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Services Section -->
+    <div class="container services text-center">
+        <h2>How Our Services Help</h2>
+        <p>We provide top-notch services that enhance your website's security, speed, and overall performance.</p>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="security.jpg" alt="Website Security" class="service-img">
+                <h4>Website Security</h4>
+                <p>We remove malware, fix vulnerabilities, and protect against attacks.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="speed.jpg" alt="Speed Optimization" class="service-img">
+                <h4>Speed Optimization</h4>
+                <p>We enhance your website's performance, ensuring faster load times.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Customer Reviews Section -->
+    <div class="container reviews text-center">
+        <h2>What Our Clients Say</h2>
+        <p>See what our happy customers have to say about our services.</p>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"My website was hacked, and they restored it within hours! Highly recommend."</p>
+            </div>
+            <div class="col-md-4">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"My site's speed improved dramatically. Thank you for the amazing service!"</p>
+            </div>
+            <div class="col-md-4">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"Professional, fast, and reliable. Best website security experts!"</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Section -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdT3BG20FHfB8_U8XLW7ND3cQk063RaJJKgZbHGMzF5zAX-MA/viewform?usp=dialog" 
+                            width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">
+                        Loading...
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Section (Bottom Button) -->
+    <div class="text-center">
+        <button class="btn cta-btn border" id="bottomContactBtn">Get a Free Consultation</button>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer class="text-center bg-light" style="background: #f8f9fa;">
+    <hr>
+        <p class="py-4">&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/yourphonenumber" class="whatsapp-btn">Chat on WhatsApp</a>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Top Button Trigger
+            var topButton = document.getElementById("topContactBtn");
+            if (topButton) {
+                topButton.addEventListener("click", function () {
+                    var contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+                    contactModal.show();
+                });
+            }
+
+            // Bottom Button Trigger
+            var bottomButton = document.getElementById("bottomContactBtn");
+            if (bottomButton) {
+                bottomButton.addEventListener("click", function () {
+                    var contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+                    contactModal.show();
+                });
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
