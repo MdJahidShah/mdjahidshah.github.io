@@ -459,6 +459,66 @@ p.text-justify {
 #chatbotInput button:hover {
     background-color: #555;
 }
+.heading-text p {
+    font-size: 23px;
+    line-height: 40px;
+}
+
+/*Showcase section Start*/
+.showcase {
+    min-height: 100vh; /* Make section full height */
+    display: flex;
+    align-items: center;
+}
+
+.showcase-img img {
+    max-height: 100%; /* Ensure the image doesn't exceed section height */
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+    width: 68%; /* Make image responsive */
+}
+a.btn.custom-btn.mywork {
+    width: 100%;
+    border: 2px solid #007bff; /* Primary border */
+    color: #007bff; /* Text color */
+    background-color: transparent; /* No background */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.btn.custom-btn.mywork:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white;
+}
+a.btn.custom-btn.cont {
+    width: 100%;
+    border: 2px solid #9fd61e; /* Primary border */
+    color: #9fd61e; /* Text color */
+    background-color: transparent; /* No background */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+a.btn.custom-btn.cont:hover {
+    background-color: #9fd61e; /* Blue background on hover */
+    color: white;
+}
+
+a.btn.custom-btn:nth-child(2) {
+    border-color: #6c757d; /* Secondary border */
+    color: #6c757d;
+}
+
+a.btn.custom-btn:nth-child(2):hover {
+    background-color: #6c757d;
+    color: white;
+}
+/*Showcase section end*/
+
 /*blog html css Start*/
 .bloghtml h2 {
     text-align: center;
@@ -539,6 +599,7 @@ figure.Portfolioimg {
     .showcase h1 {
         font-size: 30px;
     }
+    
     .showcase p {
         font-size: 16px;
     }
