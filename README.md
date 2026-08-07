@@ -9,7 +9,7 @@ This is personal Portfilio Site.
 
 ## Contact Me
 [Linkedin](https://www.linkedin.com/in/jahid-shah-wp/)
-[Facebook](https://www.facebook.com/JahidShahWP/)
+[Facebook](https://www.facebook.com/jahidwpsec/)
 [X](https://x.com/jahidshahwp)
-[Website](https://mdjahidshah.github.io/)
+[Website](https://labs.jahidshah.com/)
 

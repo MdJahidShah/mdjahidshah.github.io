@@ -1,10 +1,17 @@
+:root {
+    --primary-color: #0d6efd;
+    --dark-bg: #0f172a;
+    --card-bg: #ffffff;
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    /* font-family: Arial, sans-serif; */
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
+ }
 .container {
     width: 80%;
     margin: auto;
@@ -87,15 +94,10 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 }
-ul.navbar-nav li a{
-padding: 30px 10px;
-}
 li.nav-item {
 padding: 0;
 }
-li.nav-item:hover a {
-color: #1167b1;
-}
+
 .nav-logo a {
 font-size: 30px;
 }
@@ -110,6 +112,52 @@ padding: 15px 10px;
     justify-content: space-between;
     align-items: center;
 }
+.labs-navbar {
+    background-color: var(--dark-bg);
+}
+.hero-section {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #fff;
+    padding: 80px 0 60px;
+}
+.hero-img {
+    max-width: 180px;
+    border: 4px solid #38bdf8;
+}
+.badge-lab {
+    background-color: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+.demo-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.demo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.skill-icon {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+.btn-brand {
+    background-color: #38bdf8 !important;
+    color: #0f172a !important;
+    font-weight: 600;
+}
+.btn-brand:hover {
+    background-color: #0284c7 !important;
+    color: #fff !important;
+}
+
+
 .card-img {
     padding: 10% 0;
 }
@@ -245,11 +293,9 @@ a.btn.btn-class:hover {
     margin: 5px 0;
 }
 ul li {
-    font-size: 20px;
     margin: 5px 0;
 }
 ol li {
-    font-size: 20px;
     margin: 5px 0;
 }
 pre {
@@ -323,13 +369,22 @@ p.text-justify {
     text-align: justify;
 }
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: var(--dark-bg);
+    color: #94a3b8;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.social-link img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.2s ease;
+}
+.social-link img:hover {
+    transform: scale(1.15);
+}
+
 .footer-content {
     display: flex;
     justify-content: space-around;
