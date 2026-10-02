@@ -94,8 +94,79 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 }
-li.nav-item {
-padding: 0;
+
+/* Main navigation item */
+/* Blog parent */
+ul.navbar-menu > li.has-submenu {
+    position: relative;
+}
+
+/* Submenu */
+ul.navbar-menu > li.has-submenu > ul.submenu {
+    display: block;
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 220px;
+    min-width: 220px;
+
+    margin: 0;
+    padding: 6px 0;
+
+    list-style: none;
+
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+
+    z-index: 99999;
+
+    /* Hidden initially */
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(5px);
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease;
+}
+
+/* Show */
+ul.navbar-menu > li.has-submenu:hover > ul.submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* IMPORTANT: override Bootstrap navbar-nav behavior */
+ul.navbar-menu > li.has-submenu > ul.submenu > li {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Links */
+ul.navbar-menu > li.has-submenu > ul.submenu > li > a {
+    display: block;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 10px 15px;
+
+    color: #383838;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Hover */
+ul.navbar-menu > li.has-submenu > ul.submenu > li > a:hover {
+    background: #e8e8e8;
+    color: #163ca7;
 }
 
 .nav-logo a {

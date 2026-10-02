@@ -1,42 +1,148 @@
-<div class="nav-bg sticky-top border-bottom border-secondary" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- Mobile Toggle -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand mobile-view" href="#"><span>Jahid Shah</span></a>
-            <div class="collapse navbar-collapse navbar-Toggler" id="navbarTogglerDemo03">
-                <div class="desktop-view">
-                    <a class="navbar-brand d-flex align-items-center gap-2" href="https://labs.jahidshah.com/">
-                        <i class="fa-solid fa-flask text-info fs-4"></i>
-                        <span class="fw-bold fs-5">Jahid Shah <span class="text-info">Labs</span></span>
-                    </a>
-                    <!--img src="https://komarev.com/ghpvc/?username=mdjahidshah" alt="Profile Views"-->
-                </div>
-                <div>
-                    <ul class="navbar-menu navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-2">
-                        <li class="nav-item"><a class="nav-link active" href="#demos">Live Demos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#stats">GitHub Stats</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Stack</a></li>
-                        <!--Blog-->
-                        <li class="nav-item"><a class="nav-link" href="https://labs.jahidshah.com/blog" target="_blank">Blog</a></li>
-                        <!-- Direct funnel to your main portfolio & services site -->
-                        <li class="nav-item ms-lg-2">
-                            <a class="btn btn-outline-info btn-sm px-3 rounded-pill" href="https://jahidshah.com" target="_blank">
-                                <i class="fa-solid fa-globe me-1"></i> Main Website
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-info btn-sm px-3 rounded-pill fw-semibold text-dark" href="https://jahidshah.com/contact/" target="_blank">
-                                Hire Me
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        </button>
+
+        <!-- Mobile Brand -->
+        <a class="navbar-brand mobile-view" href="#">
+            Jahid Shah
+        </a>
+
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <!-- Logo -->
+            <div class="desktop-view">
+                <a
+                    class="navbar-brand d-flex align-items-center gap-2"
+                    href="https://labs.jahidshah.com/">
+
+                    <i class="fa-solid fa-flask text-info fs-4"></i>
+
+                    <span class="fw-bold fs-5">
+                        Jahid Shah <span class="text-info">Labs</span>
+                    </span>
+
+                </a>
             </div>
+
+            <!-- Menu -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+
+                <!-- Live Demos -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://labs.jahidshah.com/#demos">
+                        Live Demos
+                    </a>
+                </li>
+
+                <!-- GitHub Stats -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://labs.jahidshah.com/#stats">
+                        GitHub Stats
+                    </a>
+                </li>
+
+                <!-- Stack -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://labs.jahidshah.com/#skills">
+                        Stack
+                    </a>
+                </li>
+
+                <!-- BLOG DROPDOWN -->
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="blogDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Blog
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+
+                        <li>
+                            <a
+                                class="dropdown-item"
+                                href="https://labs.jahidshah.com/blog/"
+                                target="_blank">
+                                Web Development
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="dropdown-item"
+                                href="https://labs.jahidshah.com/Best-Kali-Linux-tools/"
+                                target="_blank">
+                                Kali Linux Tools
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="dropdown-item"
+                                href="https://labs.jahidshah.com/cyber-security/"
+                                target="_blank">
+                                Cyber Security
+                            </a>
+                        </li>
+
+                        <!--Hacking Devices-->
+                        <li>
+                            <a class="dropdown-item"
+                                href="https://jahidshah.com/category/hacking-devices/"
+                                target="_blank">
+                                Hacking Devices
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <!-- Main Website -->
+                <li class="nav-item ms-lg-2">
+                    <a
+                        class="btn btn-outline-info btn-sm px-3 rounded-pill"
+                        href="https://jahidshah.com"
+                        target="_blank">
+
+                        <i class="fa-solid fa-globe me-1"></i>
+                        Main Website
+
+                    </a>
+                </li>
+
+                <!-- Hire Me -->
+                <li class="nav-item">
+                    <a
+                        class="btn btn-info btn-sm px-3 rounded-pill fw-semibold text-dark"
+                        href="https://jahidshah.com/contact/"
+                        target="_blank">
+
+                        Hire Me
+
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
-        </nav>
     </div>
-</div>
+</nav>
 <!-- Navbar Section End-->
