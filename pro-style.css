@@ -703,6 +703,9 @@ figure.Portfolioimg {
 /*blog html css End*/
 
 @media (max-width: 768px) {
+    .container {
+        width: 100% !important;
+    }
     header nav {
         float: none;
         text-align: center;
