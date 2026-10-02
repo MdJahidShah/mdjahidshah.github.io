@@ -17,6 +17,9 @@ body {
     margin: auto;
     overflow: hidden;
 }
+nav.navbar > .container {
+    overflow: visible;
+}
 header {
     background: #333;
     color: #fff;
